@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+    <!-- Errors corrected:
+         Line 1: Correct DOCTYPE declaration.
+         Line 9: Correct span and h1 closing tags.
+         Line 11: Use div instead of span for content.
+         Line 13: Escape < using &lt; and & using &amp;.
+         Line 14: Convert values to numbers for calculations.
+         Line 18: Correct email input type and add required.
+         Line 22: Match datalist id with input list.
+         Line 23: Correct datalist id.
+         Line 32: Correct range min and max.
+         Line 33: Correct output for attribute.
+         Line 38: Correct copyright entity to &copy;.
+         Lines 41, 54-55: Remove duplicate closing tags.
+    -->
+
+    <!-- Header -->
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Booking Content -->
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <!-- Booking Form -->
+        <form action="#" method="get"
+            oninput="total.value = Number(adult.value) + Number(child.value);
+            price.value = (Number(adult.value)*12 + Number(child.value)*8).toFixed(2)">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                placeholder="Enter your name" required autofocus>
+            <br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone"
+                placeholder="Enter your phone number" required>
+            <br>
+
+            <label for="date">Show date:</label>
+            <input type="date" id="date" name="date">
+            <br>
+
+            <label for="time">Show time:</label>
+            <input type="time" id="time" name="time">
+            <br>
+
+            <label for="movie">Movie:</label>
+            <input type="text" id="movie" name="movie" list="movies">
+
+            <datalist id="movies">
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+                <option value="The Last Ocean">
+            </datalist>
+            <br>
+
+            <label for="adult">Adult tickets (RM 12 each):</label>
+            <input type="number" id="adult" name="adult"
+                min="0" value="0">
+            <br>
+
+            <label for="child">Child tickets (RM 8 each):</label>
+            <input type="number" id="child" name="child"
+                min="0" value="0">
+            <br>
+
+            <label for="rating">Rate our service (1-5):</label>
+            <input type="range" id="rating" name="rating"
+                min="1" max="5" step="1">
+            <br>
+
+            Total tickets:
+            <output name="total" for="adult child">0</output>
+            <br>
+
+            Total price: RM
+            <output name="price" for="adult child">0.00</output>
+            <br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <!-- Sidebar: Now Showing -->
+    <div id="sidebar">
+        <h2>Now Showing</h2>
+
+        <ul>
+            <li>
+                <strong>Space Rangers</strong>
+                <span>(PG)</span> -
+                <a href="https://www.youtube.com/results?search_query=Space+Rangers+trailer">
+                    Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>Kampung Comedy</strong>
+                <span>(P13)</span> -
+                <a href="https://www.youtube.com/results?search_query=Kampung+Comedy+trailer">
+                    Trailer
+                </a>
+            </li>
+
+            <li>
+                <strong>The Last Ocean</strong>
+                <span>(U)</span> -
+                <a href="https://www.youtube.com/results?search_query=The+Last+Ocean+trailer">
+                    Trailer
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>
+            e-Ticket&reg; &ndash; Campus Cinema
+            &lt; RM10 every Tuesday &amp; Thursday
+        </p>
+
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
