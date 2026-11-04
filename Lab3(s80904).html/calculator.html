@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Contact Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #336699;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .calculator {
+            background-color: #e6f2ff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            margin: 8px 0;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #336699;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #224466;
+        }
+
+        .footer {
+            background-color: #336699;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+
+        <h1>Contact Us</h1>
+
+        <span>We are happy to hear from you!</span>
+
+    </div>
+
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <h2>Contact Form</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <!-- Email Input -->
+            <label>Email:</label><br>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Date Input -->
+            <label>Preferred Contact Date:</label><br>
+            <input type="date" id="date" required>
+            <br><br>
+
+            <!-- Range Slider -->
+            <label>Satisfaction Level:</label><br>
+            <input type="range" id="satisfaction"
+                   min="1" max="10" value="5"
+                   oninput="showSatisfaction()">
+
+            <span id="level">5</span>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+        <!-- Calculator Section -->
+        <div class="calculator">
+
+            <h2>Simple Calculator</h2>
+
+            <label>First Number:</label><br>
+
+            <input type="number" id="x"
+                   placeholder="Enter first number"
+                   oninput="calculate()">
+
+            <br>
+
+            <label>Second Number:</label><br>
+
+            <input type="number" id="y"
+                   placeholder="Enter second number"
+                   oninput="calculate()">
+
+            <br><br>
+
+            <label>Sum:</label>
+
+            <output id="result" for="x y">0</output>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+
+        <p>Contact Information: contact@example.com</p>
+
+        <p>&copy; 2026 Contact Us. All Rights Reserved.</p>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        // Calculator Function
+        function calculate() {
+
+            let num1 = parseFloat(document.getElementById("x").value) || 0;
+
+            let num2 = parseFloat(document.getElementById("y").value) || 0;
+
+            let sum = num1 + num2;
+
+            document.getElementById("result").value = sum;
+
+        }
+
+
+        // Satisfaction Level Function
+        function showSatisfaction() {
+
+            let value = document.getElementById("satisfaction").value;
+
+            document.getElementById("level").innerHTML = value;
+
+        }
+
+
+        // Submit Form Function
+        function submitForm(event) {
+
+            event.preventDefault();
+
+            alert("Your contact form has been submitted!");
+
+        }
+
+    </script>
+
+</body>
+</html>
