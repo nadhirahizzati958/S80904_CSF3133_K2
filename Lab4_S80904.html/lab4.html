@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bloom & Bliss | Flower Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="home">
+        <h1>Bloom & Bliss</h1>
+        <p>Flowers that Speak from the Heart</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Our Flowers</a></li>
+            <li><a href="#video">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome">
+            <h2>Welcome to Bloom & Bliss</h2>
+
+            <p>
+                Make every moment special with our beautiful
+                flower bouquets. We create fresh and lovely
+                arrangements for every occasion.
+            </p>
+
+            <a href="#products" class="shop-button">
+                Explore Our Flowers
+            </a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Our Flower Shop</h2>
+
+            <article>
+                <h3>Our Story</h3>
+
+                <p>
+                    Bloom & Bliss is a flower shop that offers
+                    beautiful flower arrangements for birthdays,
+                    graduations, anniversaries and special occasions.
+                    Our goal is to make every customer happy
+                    through the beauty of flowers.
+                </p>
+            </article>
+        </section>
+
+        <!-- PRODUCT SECTION -->
+        <section id="products">
+            <h2>Our Flower Collection</h2>
+
+            <div class="product-container">
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=600"
+                         alt="Pink flower bouquet">
+
+                    <h3>Sweet Pink Bouquet</h3>
+                    <p>Perfect for birthdays and surprises.</p>
+                    <p class="price">RM 65.00</p>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=600"
+                         alt="White flower bouquet">
+
+                    <h3>Pure White Bouquet</h3>
+                    <p>Simple and elegant flower arrangement.</p>
+                    <p class="price">RM 75.00</p>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?w=600"
+                         alt="Colourful flowers">
+
+                    <h3>Happy Bloom Bouquet</h3>
+                    <p>A colourful gift for special moments.</p>
+                    <p class="price">RM 85.00</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section id="video">
+            <h2>Flower Gallery</h2>
+
+            <p>Discover the beauty of our flower collection.</p>
+
+            <figure>
+                <video controls width="100%">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+
+                <figcaption>
+                    Our Beautiful Flower Collection
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- METER SECTION -->
+        <section>
+            <h2>Our Customer Satisfaction</h2>
+
+            <p>Customer Satisfaction: 95%</p>
+
+            <meter min="0" max="100" value="95">
+                95%
+            </meter>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact">
+            <h2>Place Your Order</h2>
+
+            <p>Fill in the form to make your flower order.</p>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name"
+                       name="name" placeholder="Enter your name"
+                       required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email"
+                       name="email" placeholder="Enter your email"
+                       required>
+
+                <label for="bouquet">Choose Your Bouquet:</label>
+
+                <select id="bouquet" name="bouquet">
+                    <option>Sweet Pink Bouquet</option>
+                    <option>Pure White Bouquet</option>
+                    <option>Happy Bloom Bouquet</option>
+                </select>
+
+                <label for="date">Delivery Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="message">Special Message:</label>
+                <textarea id="message" name="message"
+                          rows="4"
+                          placeholder="Write your message here"></textarea>
+
+                <button type="submit">Submit Order</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Bloom & Bliss</h3>
+
+        <p>Flowers that Speak from the Heart.</p>
+
+        <address>
+            Email: bloomandbliss@example.com
+        </address>
+
+        <p>&copy; 2026 Bloom & Bliss. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
