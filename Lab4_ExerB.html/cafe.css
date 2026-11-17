@@ -1,0 +1,30 @@
+/* External CSS: navigation bar styling */
+nav { background-color: #4A235A; }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav li { display: inline-block; }
+nav a {
+    display: block;
+    padding: 14px 22px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover { background-color: #D35400; }
+
+/* Link states must be written in this order */
+a:link { color: #1A5276; }
+a:visited { color: #7D3C98; }
+a:hover { color: #E67E22; }
+a:active { color: #C0392B; }
+
+/* Keep navigation link text readable in every link state */
+nav a:link, nav a:visited, nav a:hover, nav a:active { color: white; }
+
+@media (max-width: 600px) {
+    nav li { display: block; }
+}

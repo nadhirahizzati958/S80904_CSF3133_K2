@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        body {
+            background-color: #F1F8E9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #1B5E20;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        h1 {
+            text-decoration: overline;
+            color: white;
+        }
+
+        h2 {
+            color: #2E7D32;
+            text-decoration: underline;
+        }
+
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+
+        /* Introduction */
+        .intro {
+            font-size: 18px;
+            background-color: #DCEDC8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Menu Prices */
+        .highlight {
+            font-weight: bold;
+            color: #2E7D32;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        /* Sections */
+        section {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Menu Cards */
+        article {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 6px solid #66BB6A;
+            border-radius: 10px;
+        }
+
+        article h3 {
+            color: #1B5E20;
+        }
+
+        /* Video */
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            color: #558B2F;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Feedback Form */
+        .feedback-form {
+            width: 90%;
+            max-width: 550px;
+            padding: 25px;
+            border: 1px solid #A5D6A7;
+            background-color: #DCEDC8;
+            border-radius: 10px;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"] {
+            display: block;
+            width: 95%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #81C784;
+            border-radius: 5px;
+        }
+
+        /* Submit Button */
+        button {
+            padding: 12px 25px;
+            background-color: #2E7D32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1B5E20;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #1B5E20;
+            color: white;
+        }
+
+        footer p {
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Errors identified in original code:
+
+    1. Line 7: Incorrect CSS comment syntax.
+    2. Line 9: list-style-type: no is invalid.
+    3. Lines 14-15: Incorrect order of link states.
+    4. Line 17: text-decoration: overlined is invalid.
+    5. Line 18: Missing colon after color property.
+    6. Line 19: Incorrect selector #intro.
+    7. Line 22: Missing dot before highlight selector.
+    8. Line 34: Incorrect Menu link destination.
+    9. Lines 42 and 46: Duplicate article IDs.
+    10. Line 53: Missing video controls attribute.
+    11. Line 54: Incorrect video MIME type.
+    12. Original code did not include viewport meta tag.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+        <p style="color:white; text-align:center;">
+            Fresh Coffee, Delicious Food and Happy Moments!
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <h2>Our Special Menu</h2>
+
+        <p class="intro">
+            Welcome to e-Café Campus! Enjoy our freshly prepared
+            drinks and delicious meals at affordable prices.
+        </p>
+
+        <!-- Menu Item 1 -->
+        <article class="item">
+            <h3>Caramel Latte</h3>
+
+            <p>
+                A delicious coffee with smooth milk
+                and sweet caramel flavour.
+            </p>
+
+            <p>
+                Only
+                <span class="old-price">RM 8.00</span>
+                <span class="highlight">RM 6.50</span>
+            </p>
+        </article>
+
+        <!-- Menu Item 2 -->
+        <article class="item">
+            <h3>Chocolate Frappuccino</h3>
+
+            <p>
+                A refreshing chocolate blended drink
+                perfect for hot days.
+            </p>
+
+            <p>
+                Only
+                <span class="old-price">RM 10.00</span>
+                <span class="highlight">RM 8.00</span>
+            </p>
+        </article>
+
+        <!-- Menu Item 3 -->
+        <article class="item">
+            <h3>Chicken Sandwich</h3>
+
+            <p>
+                Fresh bread filled with delicious chicken
+                and vegetables.
+            </p>
+
+            <p>
+                Only
+                <span class="old-price">RM 7.00</span>
+                <span class="highlight">RM 5.50</span>
+            </p>
+        </article>
+
+        <!-- Menu Item 4 -->
+        <article class="item">
+            <h3>Green Tea Latte</h3>
+
+            <p>
+                Smooth green tea mixed with creamy milk
+                for a relaxing taste.
+            </p>
+
+            <p>
+                Only
+                <span class="old-price">RM 9.00</span>
+                <span class="highlight">RM 7.00</span>
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+
+        <h2>Watch Our Story</h2>
+
+        <figure>
+
+            <video width="400" height="300" controls>
+
+                <source src="cafe.mp4" type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+            <figcaption>
+                Enjoy watching how our delicious coffee
+                is prepared at e-Café Campus.
+            </figcaption>
+
+        </figure>
+
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form" action="#" method="post">
+
+            <label for="name">Name:</label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
+
+            <label for="email">E-mail:</label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+
+            <p>Visit Type:</p>
+
+            <label>
+                <input type="radio"
+                       name="visit"
+                       value="Dine-in"
+                       required>
+                Dine-in
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="visit"
+                       value="Take-away">
+                Take-away
+            </label>
+
+            <p>Favourite Items:</p>
+
+            <label>
+                <input type="checkbox"
+                       name="favourite"
+                       value="Caramel Latte">
+                Caramel Latte
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox"
+                       name="favourite"
+                       value="Chocolate Frappuccino">
+                Chocolate Frappuccino
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox"
+                       name="favourite"
+                       value="Chicken Sandwich">
+                Chicken Sandwich
+            </label>
+
+            <br><br>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:ecafe@campus.example">
+                ecafe@campus.example
+            </a>
+        </address>
+
+    </footer>
+
+</body>
+</html>
