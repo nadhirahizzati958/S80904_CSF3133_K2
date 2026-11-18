@@ -1,0 +1,192 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F4EE;
+    color: #45404A;
+    line-height: 1.8;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #82728B;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    border-bottom: 4px solid #E2D0A8;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    color: #F3EDE2;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #E2D0A8;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    display: inline-block;
+    color: #51445A;
+    text-decoration: none;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #82728B;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/* CONTENT SECTION */
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #DCC99E;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    color: #82728B;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E2D0A8;
+    padding-bottom: 8px;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #82728B;
+    color: white;
+    padding: 13px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #E2D0A8;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #F3EEE6;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:hover {
+    background-color: #EDE5D8;
+}
+
+
+/* CONTACT LINK */
+
+section a {
+    color: #82728B;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #A58A54;
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #82728B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 4px solid #E2D0A8;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 550px;
+    }
+
+}
